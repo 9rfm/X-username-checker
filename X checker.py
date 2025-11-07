@@ -59,7 +59,7 @@ def get_random_token():
         return "Error: token.txt not found"
     except Exception as e:
         return e
-class SnapchatChecker:
+class Xchecker:
     def __init__(self):
         os.system('cls')
         TOKENCHECK = TokenChecker.selfcheck()
@@ -74,7 +74,7 @@ class SnapchatChecker:
         self.rl = 0
         self.run = True
         self.target_available = 1005
-        print(f"{Fore.CYAN}===== Snapchat Username Checker =====")  
+        print(f"{Fore.CYAN}===== Xchecker Username Checker =====")  
         print(f"{Fore.MAGENTA} Telegram @ytsof IG @shdw")
         self.mode = input(f"Choose mode:\n1. Check from file\n2. Check random usernames\n3. Check specific username\n4. Check with semi-username patterns\n5.meanings\n6. Check with common words\n7. Check with names (person/country/lands)\nEnter choice (1-7): ").strip()
         
@@ -175,7 +175,7 @@ class SnapchatChecker:
                     self.unavailable += 1
                     name = self.user
                     print(f"{Fore.RED} Bad username @{name}")
-                    with open("notavailable_snapchat.txt", "a", encoding="utf-8") as file:
+                    with open("notavailable_Xchecker.txt", "a", encoding="utf-8") as file:
                         file.write(f"{name}\n")
                 else:
                     self.rl += 1
@@ -253,11 +253,11 @@ class SnapchatChecker:
         print(f"{Fore.GREEN}Available: {self.available} | {Fore.RED}Unavailable: {self.unavailable} | {Fore.YELLOW}unknown: {self.rl}")
         
         if self.available > 0:
-            print(f"{Fore.GREEN}Available usernames saved in available_snapchat.txt")
+            print(f"{Fore.GREEN}Available usernames saved in available_Xchecker.txt")
         try:
             self.client.close()
         except Exception:
             pass
 
 if __name__ == "__main__":
-    SnapchatChecker()
+    Xchecker()
