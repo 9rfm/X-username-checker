@@ -36,7 +36,7 @@ This tool was created for educational, research, and automation purposes — hel
 - 📁 Saves results into categorized files:  
   - `available_Xchecker.txt`  
   - `notavailable_Xchecker.txt`  
-  - `error_IG.txt`
+  - `error_X.txt`
 
 ---
 
