@@ -183,7 +183,7 @@ class Xchecker:
                 if attempt == retries - 1:
                     print(f"{Fore.YELLOW}[ERROR] {username}: {str(e)}")
                     try:
-                        with open("error_IG.txt", "a", encoding="utf-8") as errf:
+                        with open("error_X.txt", "a", encoding="utf-8") as errf:
                             errf.write(f"{username}: {str(e)}\n")
                     except:
                         pass
@@ -261,3 +261,4 @@ class Xchecker:
 
 if __name__ == "__main__":
     Xchecker()
+
